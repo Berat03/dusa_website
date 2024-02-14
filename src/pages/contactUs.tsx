@@ -1,5 +1,6 @@
 import NavBar from "../components/navBar";
 import React from "react";
+import ContactLinks from "../components/contactLinks";
 
 export default function ContactUs(){
     return (
@@ -7,6 +8,7 @@ export default function ContactUs(){
         <div>
             <NavBar/>
         </div>
+          <ContactLinks/>
       </div>
     )
 }
