@@ -22,8 +22,8 @@ The current [DUSA](https://speleologicalassociation.webspace.durham.ac.uk/) (Dur
 
 
 ## Development Logs
-
-### Log 1 - 14/02/24 ~5hrs
+<!-- ~6 hours so far I think, mainly art tbh -->
+### Log 1 - 14/02/24 
 
 - **Navigation Bar**: Implemented a responsive navigation bar to facilitate easy site navigation.
 - **Contact Page**: Added a responsive contact page, ensuring accessibility across various devices.
