@@ -1,7 +1,7 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { NavLink } from "react-router-dom";
-import dusa_logo from "../assests/dusa_website_cropped.png"
+import dusa_logo from "../assets/dusa_website_cropped.png"
 function classNames(...classes: (string | boolean)[]): string {
   return classes.filter(Boolean).join(' ');
 }
