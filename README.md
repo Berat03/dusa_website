@@ -4,13 +4,14 @@
 
 The current [DUSA](https://speleologicalassociation.webspace.durham.ac.uk/) (Durham University Speleology Association) website has become outdated, lacking in dynamic updates and effective presentation of club activities. With approval from DUSA executives, this project sets out to create a new, tailored website. I aim to address these issues directly, creating a website that more accurately reflects the club and facilitates easy content management.
 
+
 ## Objectives
 
-- **Trip Reports**: We want the website to present the activities (i.e. trips) of the club, and having a trip report section (which is common in the sport) is a great way to advertise the club being active.
-- **Archive**: A decades long historical archive of photos and newletters from past members (backuped and redundancy)
-- **Visual and Interactive UX** To advertise the club to potential members
-- **Admin Page**: So that non-technical users can interact with the page
-
+- **Trip Reports**: Introduce a section for showcasing club activities through trip reports, attracting prospective members.
+- **Archive**: Create a (backed-up and redundant) archive for the club's extensive history of photos and newsletters, ensuring preservation and accessibility.
+- **Visual and Interactive UX**: Develop a visually appealing and interactive website to effectively promote the club to potential members.
+- **Admin Page**: Provide an easy-to-use admin interface for non-technical users to update and manage the website content.
+- 
 
 ## Technologies Used
 
@@ -19,9 +20,10 @@ The current [DUSA](https://speleologicalassociation.webspace.durham.ac.uk/) (Dur
 - **Database** : MongoDB or AWS (depending on pricing)
 - **Deployment**: AWS (generous free tier)
 
+
 ## Development Logs
 
-### Log 1 - 14/02/24
+### Log 1 - 14/02/24 ~5hrs
 
 - **Navigation Bar**: Implemented a responsive navigation bar to facilitate easy site navigation.
 - **Contact Page**: Added a responsive contact page, ensuring accessibility across various devices.
