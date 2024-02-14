@@ -2,7 +2,7 @@
 
 ## Project Introduction
 
-The current [DUSA](https://speleologicalassociation.webspace.durham.ac.uk/) (Durham University Speleodgy Assoccisation) website is a bit lackluster, has not been updated for a while due to it being inconvneitnent to update and doesn't present club activities in a manner that promotes the club. This project is creating a new website (with the permission of the DUSA executives) , with all the functionality tailored for their specific needs. 
+The current [DUSA](https://speleologicalassociation.webspace.durham.ac.uk/) (Durham University Speleology Association) website has become outdated, lacking in dynamic updates and effective presentation of club activities. With approval from DUSA executives, this project sets out to create a new, tailored website. I aim to address these issues directly, creating a website that more accurately reflects the club and facilitates easy content management.
 
 ## Objectives
 
