@@ -3,11 +3,11 @@ import React from "react";
 
 export default function TripReports(){
     return (
-    <div className="bg-yellow-800 h-screen">
+    <div className="h-screen">
         <div>
             <NavBar/>
         </div>
-        <h1>Contact Us</h1>
+        <h1  className='flex justify-center text-6xl font-extrabold'>TRIP REPORTS</h1>
   </div>
     )
 }

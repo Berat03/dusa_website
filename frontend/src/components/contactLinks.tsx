@@ -16,7 +16,7 @@ export default function ContactLinks() {
       title: 'Instagram',
       description: 'Expedita qui non ut quia ipsum voluptatum ipsam pariatur. Culpa vitae ipsum minus eius vero quo quibusdam.',
       link: 'https://www.instagram.com/dusa_caving/?hl=en',
-      linkText: 'Report a bug'
+      linkText: 'Follow us on Instagram'
     },
     {
       Icon: FacebookLogo,
@@ -28,14 +28,14 @@ export default function ContactLinks() {
   ];
 
   return (
-    <div className="isolate bg-white px-6 py-10 sm:py-10 lg:px-8">
+    <div className="isolate bg-white px-6 py-10 sm:py-10 lg:px-8 h-screen">
       <div className="mx-auto max-w-2xl sm:text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get Involved</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <p className="mt-2 text-lg leading-8 text-white">
           Aute magna irure deserunt veniam aliqua magna enim voluptate.
         </p>
       </div>
-      <div className="mx-auto mt-20 max-w-lg space-y-16">
+      <div className="mx-auto mt-15 max-w-lg space-y-16">
         {contactMethods.map(({ Icon, title, description, link, linkText }, index) => (
           <div key={index} className="flex gap-x-6">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">

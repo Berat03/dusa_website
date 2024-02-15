@@ -66,8 +66,8 @@ export default function NavBar() {
                   to={item.to}
                   className={({ isActive }) =>
                     classNames(
-                      "block rounded-md px-3 py-2 text-base font-medium",
-                      isActive ? "text-white bg-gray-700" : "text-gray-300 hover:text-white hover:bg-gray-700"
+                      "block rounded-md px-3 py-2 font-extrabold text-base font-medium",
+                      isActive ? "text-white bg-gray-700" : "hover:text-white hover:bg-gray-700"
                     )
                   }
                 >

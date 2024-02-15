@@ -29,18 +29,20 @@ export default function ParallaxComposition() {
       </ParallaxLayer>
 
 
-      <ParallaxLayer offset={0} speed={0.4}>
+      <ParallaxLayer offset={0} speed={0.5}>
         <img src={lay_2} alt=""  style={{ width: '100%', height: '100%' }} />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0} speed={0.6}>
+      <ParallaxLayer offset={0} speed={0.8}>
         <img src={lay_1} alt=""   style={{ width: '100%', height: '100%' }} />
       </ParallaxLayer>
 
-        <ParallaxLayer offset={0.1} speed={0.4}>
+
+
+        <ParallaxLayer offset={0.1} speed={0.7}>
         <img src={lay_0} alt="cover_bottom"   style={{ width: '100%', height: '100%' }} />
       </ParallaxLayer>
-         <ParallaxLayer offset={0.1} speed={0.35}>
+         <ParallaxLayer offset={0.1} speed={0.5}>
         <img src={lay_0} alt="cover_bottom"   style={{ width: '100%', height: '100%' }} />
       </ParallaxLayer>
          <ParallaxLayer offset={0.15} speed={0.3}>
