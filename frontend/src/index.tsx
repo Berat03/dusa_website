@@ -4,27 +4,30 @@ import './index.css';
 import HomePage from './pages/HomePage';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import ContactUs from "./pages/contactUs";
-import TripReports from "./pages/tripReports";
-import News from "./pages/news";
+// Pages
+import Join from "./pages/join";
+import Blog from "./pages/blog";
+import NewToCaving from "./pages/newToCaving";
+import InvalidPage from "./pages/invalidPage";
 
 const router = createBrowserRouter([
     {
-        path: '/',
-        element: <HomePage />,
+        path: '/', element: <HomePage />,
     },
     {
-        path: '/ContactUs',
-        element: <ContactUs />,
+        path: '/Join', element: <Join />,
     },
     {
-        path: '/TripReports',
-        element: <TripReports />,
+        path: '/Blog', element: <Blog />,
     },
     {
-        path: '/News',
-        element: <News />,
+        path: '/NewToCaving', element: <NewToCaving />,
+    },
+
+    {
+        path: '*', element: <InvalidPage/>,
     }
+
 ]);
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

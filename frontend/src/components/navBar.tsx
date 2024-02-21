@@ -1,44 +1,48 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { NavLink } from "react-router-dom";
-import dusa_logo from "../assets/dusa_website_cropped.png"
+
+interface NavItem {
+  name: string;
+  to: string;
+}
+
+const navigation: NavItem[] = [
+  { name: 'CAVING', to: '/NewToCaving' },
+  { name: 'BLOG', to: '/Blog' },
+  { name: 'JOIN', to: '/Join' },
+];
+
 function classNames(...classes: (string | boolean)[]): string {
   return classes.filter(Boolean).join(' ');
 }
 
-const navigation = [
-  { name: 'HOME', to: '/' },
-  { name: 'TRIP REPORTS', to: '/TripReports' },
-  { name: 'NEWS', to: '/News' },
-  { name: 'CONTACT US', to: '/ContactUs' },
-];
+// TypeScript component
+const NavBar: React.FC = () => {
+  // Define the type for the navLinkStyle function
+  const navLinkStyle = ({ isActive }: { isActive: boolean }): string =>
+    classNames(
+      "rounded-md px-2 py-1 text-sm font-extrabold font-medium",
+      isActive ? "text-white bg-gray-700" : "hover:text-white hover:bg-gray-700"
+    );
 
-export default function NavBar() {
   return (
-    <Disclosure as="nav" className='bg-white' >
+    <Disclosure as="nav" className='bg-white' style={{ zIndex: 60 }}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-3 lg:px-6">
             <div className="flex h-10 items-center justify-between">
-              <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-auto"
-                  src={dusa_logo}
-                  alt="Our logo"
-                />
-              </div>
+              {/* Use navLinkStyle for DUSA NavLink */}
+              <NavLink to={'/'} className={({ isActive }) => navLinkStyle({ isActive })}>
+                DUSA
+              </NavLink>
               <div className="hidden sm:block sm:ml-6 flex-1">
                 <div className="flex justify-end space-x-1 text-black">
                   {navigation.map((item) => (
                     <NavLink
                       key={item.name}
                       to={item.to}
-                      className={({ isActive }) =>
-                        classNames(
-                          "rounded-md px-2 py-1 text-sm font-extrabold font-medium",
-                          isActive ? "text-white bg-gray-700" : "hover:text-white hover:bg-gray-700"
-                        )
-                      }
+                      className={({ isActive }) => navLinkStyle({ isActive })}
                     >
                       {item.name}
                     </NavLink>
@@ -64,12 +68,7 @@ export default function NavBar() {
                 <NavLink
                   key={item.name}
                   to={item.to}
-                  className={({ isActive }) =>
-                    classNames(
-                      "block rounded-md px-3 py-2 font-extrabold text-base font-medium",
-                      isActive ? "text-white bg-gray-700" : "hover:text-white hover:bg-gray-700"
-                    )
-                  }
+                  className={({ isActive }) => navLinkStyle({ isActive })}
                 >
                   {item.name}
                 </NavLink>
@@ -82,3 +81,4 @@ export default function NavBar() {
   );
 }
 
+export default NavBar;
