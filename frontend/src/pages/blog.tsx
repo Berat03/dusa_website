@@ -20,7 +20,7 @@ export default function Blog(){
           </div>
           <div
             className="flex flex-1 items-center justify-center bg-green-500 text-white cursor-pointer hover:bg-green-700 transition-colors w-full sm:w-1/2"
-            onClick={() => navigate('/trip-report')}
+            onClick={() => navigate('/TripReports')}
           >
             <p className="text-xl font-bold">Trip Reports</p>
           </div>
