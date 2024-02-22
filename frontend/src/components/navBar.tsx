@@ -9,7 +9,8 @@ interface NavItem {
 
 const navigation: NavItem[] = [
   { name: 'CAVING', to: '/NewToCaving' },
-  { name: 'BLOG', to: '/Blog' },
+  { name: 'ARCHIVE', to: '/Blog' },
+  { name: 'TRIP REPORTS', to: '/TripReports' },
   { name: 'JOIN', to: '/Join' },
 ];
 
