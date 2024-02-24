@@ -8,9 +8,11 @@ import lay_0 from '../assets/parallaxImages/bottom.png';
 import lay_1 from '../assets/parallaxImages/low_layer.png';
 import lay_2 from '../assets/parallaxImages/Caver_Layer.png';
 import lay_3 from '../assets/parallaxImages/after_caver_not_water.png';
-import lay_4 from '../assets/parallaxImages/stars.png';
+import stars from '../assets/parallaxImages/stars.png';
 import lay_5 from '../assets/parallaxImages/middleLayers.png';
 import lay_6 from '../assets/parallaxImages/sideWalls.png';
+import water from '../assets/parallaxImages/water.png';
+import last_walls from '../assets/parallaxImages/last_walls.png';
 
 
 export default function ParallaxComposition() {
@@ -31,7 +33,7 @@ export default function ParallaxComposition() {
     useEffect(scrollListener, []);
 
   return (
-    <Parallax pages={1.2} className='' ref={ref}>
+    <Parallax pages={1.12} className='' ref={ref}>
 
        <ParallaxLayer offset={0} speed={0.3} style={{ zIndex: 50 }}>
         <h1 className='flex justify-center items-center text-6xl text-black font-extrabold mt-10 p-32'>ADVENTURE AWAITS</h1>
@@ -44,7 +46,14 @@ export default function ParallaxComposition() {
 
 
        <ParallaxLayer offset={0} speed={0.1}>
-        <img src={lay_4}  alt="" style={{ width: '100%', height: '100%' }} />
+        <img src={stars}  alt="" style={{ width: '100%', height: '100%' }} />
+      </ParallaxLayer>
+
+        <ParallaxLayer offset={0} speed={0.12} >
+        <img src={last_walls}  alt="" style={{ width: '100%', height: '100%' }} />
+      </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.17} >
+        <img src={water}  alt="" style={{ width: '100%', height: '100%' }} />
       </ParallaxLayer>
 
          <ParallaxLayer offset={0} speed={0.2} >
