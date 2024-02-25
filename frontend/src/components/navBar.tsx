@@ -1,5 +1,5 @@
-import { Disclosure } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 
 interface NavItem {
@@ -8,14 +8,14 @@ interface NavItem {
 }
 
 const navigation: NavItem[] = [
-  { name: 'CAVING', to: '/NewToCaving' },
-  { name: 'ARCHIVE', to: '/Blog' },
-  { name: 'TRIP REPORTS', to: '/TripReports' },
-  { name: 'JOIN', to: '/Join' },
+  { name: "CAVING", to: "/NewToCaving" },
+  { name: "ARCHIVE", to: "/Blog" },
+  { name: "TRIP REPORTS", to: "/TripReports" },
+  { name: "JOIN", to: "/Join" },
 ];
 
 function classNames(...classes: (string | boolean)[]): string {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 // TypeScript component
@@ -24,17 +24,22 @@ const NavBar: React.FC = () => {
   const navLinkStyle = ({ isActive }: { isActive: boolean }): string =>
     classNames(
       "rounded-md px-2 py-1 text-sm font-extrabold font-medium",
-      isActive ? "text-white bg-gray-700" : "hover:text-white hover:bg-gray-700"
+      isActive
+        ? "text-white bg-gray-700"
+        : "hover:text-white hover:bg-gray-700",
     );
 
   return (
-    <Disclosure as="nav" className='bg-white' style={{ zIndex: 60 }}>
+    <Disclosure as="nav" className="bg-white" style={{ zIndex: 60 }}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-3 lg:px-6">
             <div className="flex h-10 items-center justify-between">
               {/* Use navLinkStyle for DUSA NavLink */}
-              <NavLink to={'/'} className={({ isActive }) => navLinkStyle({ isActive })}>
+              <NavLink
+                to={"/"}
+                className={({ isActive }) => navLinkStyle({ isActive })}
+              >
                 DUSA
               </NavLink>
               <div className="hidden sm:block sm:ml-6 flex-1">
@@ -80,6 +85,6 @@ const NavBar: React.FC = () => {
       )}
     </Disclosure>
   );
-}
+};
 
 export default NavBar;

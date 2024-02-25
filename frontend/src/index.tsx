@@ -9,7 +9,6 @@ import Join from "./pages/join";
 import Blog from "./pages/blog";
 import NewToCaving from "./pages/newToCaving";
 import InvalidPage from "./pages/invalidPage";
-import TripReport from "./pages/tripReport";
 
 const router = createBrowserRouter([
     {
@@ -19,9 +18,6 @@ const router = createBrowserRouter([
         path: '/Join', element: <Join />,
     },
     {
-        path: '/Blog', element: <Blog />,
-    },
-    {
         path: '/NewToCaving', element: <NewToCaving />,
     },
 
@@ -29,7 +25,7 @@ const router = createBrowserRouter([
         path: '*', element: <InvalidPage/>,
     },
     {
-        path: '/TripReports', element: <TripReport />,
+        path: '/TripReports', element: <Blog />,
     }
 
 ]);

@@ -1,8 +1,5 @@
 import React from "react";
-import About from "../components/about";
 
 export default function NewToCaving() {
-  return (
-        <About/>
-  );
+  return <h1>Hey</h1>;
 }
