@@ -4,9 +4,10 @@ module.exports = {
     // purgeLayersByDefault: true,
   },
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+
+    "./src/pages/*.{ts,tsx}",
+    "./src/components/*.{ts,tsx}"
   ],
-  purge: [],
   theme: {
     extend: {},
   },

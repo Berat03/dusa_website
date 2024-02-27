@@ -8,13 +8,13 @@ interface NavItem {
 }
 
 const navigation: NavItem[] = [
-  { name: "CAVING", to: "/NewToCaving" },
-  { name: "ARCHIVE", to: "/Blog" },
-  { name: "TRIP REPORTS", to: "/TripReports" },
-  { name: "JOIN", to: "/Join" },
+  { name: "CAVING", to: "/caving" },
+  { name: "GALLERY", to: "/gallery" },
+  { name: "BLOG", to: "/blog" },
+  { name: "JOIN", to: "/join" },
 ];
 
-function classNames(...classes: (string | boolean)[]): string {
+function classNames(...classes: (string)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -23,19 +23,18 @@ const NavBar: React.FC = () => {
   // Define the type for the navLinkStyle function
   const navLinkStyle = ({ isActive }: { isActive: boolean }): string =>
     classNames(
-      "rounded-md px-2 py-1 text-sm font-extrabold font-medium",
+      "rounded-md px-2 py-1 text-sm font-bold font-medium",
       isActive
         ? "text-white bg-gray-700"
         : "hover:text-white hover:bg-gray-700",
     );
 
   return (
-    <Disclosure as="nav" className="bg-white" style={{ zIndex: 60 }}>
+    <Disclosure as="nav" className="bg-white font-extrabold" style={{ zIndex: 60 }}>
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-3 lg:px-6">
+          <div className="mx-auto  max-w-7xl px-2 sm:px-3 lg:px-6">
             <div className="flex h-10 items-center justify-between">
-              {/* Use navLinkStyle for DUSA NavLink */}
               <NavLink
                 to={"/"}
                 className={({ isActive }) => navLinkStyle({ isActive })}
@@ -43,7 +42,7 @@ const NavBar: React.FC = () => {
                 DUSA
               </NavLink>
               <div className="hidden sm:block sm:ml-6 flex-1">
-                <div className="flex justify-end space-x-1 text-black">
+                <div className="flex justify-end space-x-1 text-black font-extrabold">
                   {navigation.map((item) => (
                     <NavLink
                       key={item.name}

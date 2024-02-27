@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // do: correctly rename the layers
-// CONVERT TO SVG!!!!! more optimised for performance and resolution
-// Could add scroll to stars
+// CONVERT TO SVG!more optimised for performance and resolution
 import lay_0 from "../assets/parallaxImages/bottom.png";
 import lay_1 from "../assets/parallaxImages/low_layer.png";
 import lay_2 from "../assets/parallaxImages/Caver_Layer.png";
@@ -32,7 +31,7 @@ export default function ParallaxComposition() {
   useEffect(scrollListener, []);
 
   return (
-    <Parallax pages={1.12} className="" ref={ref}>
+    <Parallax pages={1.2} className="" ref={ref}>
       <ParallaxLayer offset={0} speed={0.3} style={{ zIndex: 50 }}>
         <h1 className="flex justify-center items-center text-6xl text-black font-extrabold mt-10 p-32">
           ADVENTURE AWAITS

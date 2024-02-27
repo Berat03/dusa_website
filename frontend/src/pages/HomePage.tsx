@@ -10,7 +10,7 @@ export default function HomePage() {
       <div className="">
         <NavBar />
       </div>
-      <div className="h-screen -z-40">
+      <div className="h-screen">
         <ParallaxComposition />
       </div>
       <ClubStats />

@@ -26,7 +26,7 @@ export default function ContactLinks() {
       description:
         "Sint aut modi porro consequatur architecto commodi qui consequatur. Dignissimos adipisci minima.",
       link: "https://www.facebook.com/groups/DurhamCaving/",
-      linkText: "Join our Facebook Page",
+      linkText: "JoinPage our Facebook Page",
     },
   ];
 
