@@ -31,7 +31,7 @@ const NavBar: React.FC = () => {
         );
 
     return (
-        <Disclosure as="nav" className="bg-white font-extrabold" style={{zIndex: 60}}>
+        <Disclosure as="nav" className="bg-brown-900 font-4xl " style={{zIndex: 60}}>
             {({open}) => (
                 <>
                     <div className="mx-auto  max-w-7xl px-2 sm:px-3 lg:px-6">
@@ -42,7 +42,7 @@ const NavBar: React.FC = () => {
                             >
                                 DUSA
                             </NavLink>
-                            <div className="hidden sm:block sm:ml-6 flex-1">
+                            <div className="hidden sm:block font-extrabold sm:ml-6 flex-1">
                                 <div className="flex justify-end space-x-1 text-black font-extrabold">
                                     {navigation.map((item) => (
                                         <NavLink
@@ -69,7 +69,7 @@ const NavBar: React.FC = () => {
                         </div>
                     </div>
 
-                    <Disclosure.Panel className="sm:hidden">
+                    <Disclosure.Panel className="sm:hidden ">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <NavLink
