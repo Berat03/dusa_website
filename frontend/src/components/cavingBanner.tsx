@@ -2,28 +2,33 @@ import {TypeAnimation} from "react-type-animation";
 
 export default function CavingBanner() {
     return (
-        <div>
+        <div className="p-10">
             <TypeAnimation
                 preRenderFirstString={true}
+                style={{whiteSpace: 'pre-line'}}
                 sequence={[
                     500,
-                    'So, you\'re new to Caving?',
+                    `So, you\'re interested \n in Caving?`,
                     3000,
-                    'So, you\'re new to ',
+                    'So, you\'re interested in ',
                     500,
-                    'So, you\'re new to Adventure?',
+                    'So, you\'re interested in Adventure?',
                     1500,
-                    'So, you\'re new to ',
+                    'So, you\'re interested in ',
                     500,
-                    'So, you\'re new to Challenge?',
+                    'So, you\'re interested in Challenge?',
                     1500,
-                    'So, you\'re new to ',
+                    'So, you\'re interested in ',
                     500,
-                    'So, you\'re new to Caving? ',
+                    'So, you\'re interested in Excitement?',
+                    1500,
+                    'So, you\'re interested in ',
+                    500,
+                    'So, are you reading to go Caving? ',
                     3000,
                 ]}
                 speed={20}
-                className="text-4xl sm:text-6xl md:text-9xl text-black font-extrabold"
+                className="text-5xl sm:text-7xl md:text-9xl mx-auto text-white font-extrabold"
                 repeat={1}
             />
         </div>

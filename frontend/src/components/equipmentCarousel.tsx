@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 // Correct way to import when using TypeScript
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import {ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/24/outline';
 
 import descenderImage from '../assets/equipmentCardImages/Descender.png';
 import cowsTailsImage from '../assets/equipmentCardImages/Descender.png';
@@ -50,12 +50,16 @@ export default function EquipmentCarousel() {
                     <h2 className="text-white text-4xl font-bold">{cardData[activeCard].title}</h2>
                     <p className="text-white text-2xl">{cardData[activeCard].content}</p>
                 </div>
-                <button className={`absolute z-30 left-0 top-1/2 z-30 transform -translate-y-1/2 px-4 py-2 rounded-full ${prevButtonStyle}`} onClick={prevCard}
-                        disabled={activeCard === 0}>
+                <button
+                    className={`absolute z-30 left-0 top-1/2 z-30 transform -translate-y-1/2 px-4 py-2 rounded-full ${prevButtonStyle}`}
+                    onClick={prevCard}
+                    disabled={activeCard === 0}>
                     <ChevronLeftIcon className="h-6 w-6 text-white"/>
                 </button>
-                <button className={`absolute right-0 top-1/2 z-30 transform -translate-y-1/2 px-4 py-2 rounded-full ${nextButtonStyle}`} onClick={nextCard}
-                        disabled={activeCard === cardData.length - 1}>
+                <button
+                    className={`absolute right-0 top-1/2 z-30 transform -translate-y-1/2 px-4 py-2 rounded-full ${nextButtonStyle}`}
+                    onClick={nextCard}
+                    disabled={activeCard === cardData.length - 1}>
                     <ChevronRightIcon className="h-6 w-6 text-red"/>
                 </button>
             </div>

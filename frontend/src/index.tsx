@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         path: '/gallery', element: <GalleryPage/>,
     }, {
         path: '/calender', element: <CalenderPage/>,
-    },{
+    }, {
         path: '/api', element: <ApiPage/>,
     },
 

@@ -35,7 +35,7 @@ const NavBar: React.FC = () => {
             {({open}) => (
                 <>
                     <div className="mx-auto  max-w-7xl px-2 sm:px-3 lg:px-6">
-                        <div className="flex h-10 items-center justify-between">
+                        <div className="flex 111 items-center justify-between">
                             <NavLink
                                 to={"/"}
                                 className={({isActive}) => navLinkStyle({isActive})}
