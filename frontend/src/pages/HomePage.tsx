@@ -4,7 +4,6 @@ import NavBar from "../components/navBar";
 import ClubStats from "../components/clubStats";
 import Footer from "../components/footer";
 import ImageTilesHalfPageText from "../components/imageTilesHalfPageText";
-import ImageBgOverlapTextFull from "../components/imageBgOverlapTextFull";
 
 // style={{backgroundColor:'rgb(10,20,28)'}}
 export default function HomePage() {
@@ -22,12 +21,9 @@ export default function HomePage() {
             <div className="">
                 <ImageTilesHalfPageText/>
             </div>
-            <div>
-                            <ImageBgOverlapTextFull/>
 
-            </div>
             <div>
-                            <Footer/>
+                <Footer/>
 
             </div>
         </div>
