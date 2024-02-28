@@ -1,6 +1,5 @@
-import { MouseEventHandler } from "react";
+import {MouseEventHandler} from "react";
 import {useNavigate} from "react-router-dom";
-import navBar from "./navBar";
 
 interface Post {
     id: number;

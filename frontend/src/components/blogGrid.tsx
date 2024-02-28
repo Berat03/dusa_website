@@ -78,8 +78,9 @@ export default function BlogGrid() {
                         Learn more about what caving entails
                     </p>
                 </div>
-                <SearchBar setSearchValue={setSearchValue} />
-                <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <SearchBar setSearchValue={setSearchValue}/>
+                <div
+                    className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {filteredResults.map((post) => (
                         <BlogCard post={post}/>
                     ))}

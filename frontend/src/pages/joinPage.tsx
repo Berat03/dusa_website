@@ -2,6 +2,7 @@ import NavBar from "../components/navBar";
 import React from "react";
 import ContactLinks from "../components/contactLinks";
 import MailingList from "../components/mailingList";
+import Footer from "../components/footer";
 
 export default function JoinPage() {
     return (
@@ -11,9 +12,9 @@ export default function JoinPage() {
             </div>
             <div className="flex flex-col items-center">
                 <ContactLinks/>
-                    <MailingList/>
+                <MailingList/>
             </div>
-
+            <Footer/>
         </div>
     );
 }

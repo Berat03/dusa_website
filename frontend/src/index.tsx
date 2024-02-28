@@ -6,10 +6,11 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 // Pages
 import JoinPage from "./pages/joinPage";
 import Blog from "./pages/blog";
-import NewToCaving from "./pages/newToCaving";
+import CavingPage from "./pages/cavingPage";
 import InvalidPage from "./pages/invalidPage";
 import GalleryPage from "./pages/galleryPage";
 import HomePage from './pages/HomePage';
+import CalenderPage from "./pages/calenderPage";
 
 const router = createBrowserRouter([
     {
@@ -17,13 +18,15 @@ const router = createBrowserRouter([
     }, {
         path: '/join', element: <JoinPage/>,
     }, {
-        path: '/caving', element: <NewToCaving/>,
+        path: '/caving', element: <CavingPage/>,
     }, {
         path: '*', element: <InvalidPage/>,
     }, {
         path: '/blog', element: <Blog/>,
     }, {
         path: '/gallery', element: <GalleryPage/>,
+    }, {
+        path: '/calender', element: <CalenderPage/>,
     },
 
 ]);

@@ -1,4 +1,3 @@
-import BlogCarousel from "../components/blogCarousel";
 import Img_1 from "../assets/MaydayJakub.jpg"
 import Img_2 from "../assets/dalesImage.jpg"
 
@@ -21,16 +20,16 @@ interface BlogCardProps {
 }
 
 const images = [
-  {
-    imageUrl: Img_1,
-  },
-  {
-    imageUrl: Img_2,
-  },
+    {
+        imageUrl: Img_1,
+    },
+    {
+        imageUrl: Img_2,
+    },
 ];
 
-export default function IndivBlogPage({post}: BlogCardProps){
+export default function IndivBlogPage({post}: BlogCardProps) {
     return (
         <h1>Test</h1>
-        )
-    }
+    )
+}

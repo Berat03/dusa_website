@@ -19,7 +19,7 @@ export default function SearchBar({setSearchValue}: SearchBarProps) {
         setInputValue((inputValue) => val)
         setSearchValue((inputValue) => val) // why do I have to declare this, isn't it implicitly defined from useState?
 
-    };
+    }
 
     return (
         <>
