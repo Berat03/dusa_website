@@ -22,8 +22,14 @@ export default function HomePage() {
             <div className="">
                 <ImageTilesHalfPageText/>
             </div>
-            <ImageBgOverlapTextFull/>
-            <Footer/>
+            <div>
+                            <ImageBgOverlapTextFull/>
+
+            </div>
+            <div>
+                            <Footer/>
+
+            </div>
         </div>
     );
 }
