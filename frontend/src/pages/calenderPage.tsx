@@ -1,10 +1,11 @@
 import NavBar from "../components/navBar";
+import CalendarCalendar from "../components/calenderCalender";
 
 export default function CalenderPage() {
     return (
         <div>
             <NavBar/>
-            <h1>Calender</h1>
+            <CalendarCalendar/>
         </div>
     )
 }
