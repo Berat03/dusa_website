@@ -51,6 +51,5 @@ The current [DUSA](https://speleologicalassociation.webspace.durham.ac.uk/) (Dur
 - **Content**: Simplify fill with more context
 - **Backend**: Conntect Blog and Gallery backends to S3 buckets, will use Golang (good for backend's and also I like the language).
 
-Note to self - Do more frequent logs, and maybe concentrate on deep work > spreading too thin. Consider maybe an MVP?
 ![Development Log 2](./logs/log2.gif)
 
