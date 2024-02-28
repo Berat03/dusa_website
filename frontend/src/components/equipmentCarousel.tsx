@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// Import your images
+
 import descenderImage from '../assets/equipmentCardImages/Descender.png';
 import cowsTailsImage from '../assets/equipmentCardImages/Descender.png';
 import harnessImage from '../assets/equipmentCardImages/Descender.png';
@@ -36,7 +36,6 @@ export default function EquipmentCarousel() {
         setActiveCard((prevActiveCard) => (prevActiveCard - 1 + cardData.length) % cardData.length);
     };
 
-    // Define button styles based on the active card
     const prevButtonStyle = activeCard === 0 ? "bg-gray-400 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-600 text-white";
     const nextButtonStyle = activeCard === cardData.length - 1 ? "bg-gray-400 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-600 text-white";
 
@@ -51,14 +50,12 @@ export default function EquipmentCarousel() {
                 </div>
             </div>
             <div className="flex flex-row">
-
                 <button className={`mt-4 px-4 mr-1 py-2 rounded ${prevButtonStyle}`} onClick={prevCard}
-                        disabled={activeCard === 0}>Prev Card
+                        disabled={activeCard === 0}>Prev
                 </button>
                 <button className={`mt-4 px-4 ml-1 py-2 rounded ${nextButtonStyle}`} onClick={nextCard}
-                        disabled={activeCard === cardData.length - 1}>Next Card
+                        disabled={activeCard === cardData.length - 1}>Next
                 </button>
-
             </div>
         </div>
     );
