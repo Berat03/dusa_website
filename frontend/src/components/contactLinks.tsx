@@ -8,7 +8,7 @@ export default function ContactLinks() {
             Icon: EnvelopeIcon,
             title: "Send an email",
             description:
-                "Ut cursus est ut amet. Lobortis eget egestas leo vitae eget porttitor risus blandit. Nunc a in lorem vel iaculis porttitor.",
+                "Ut cursus est ut amet. Lobortis eget egestas leo vitae eget porttitor risus blandit. Nunc a in lorem vel iaculis porttitor. Email us at speleological.association@durham.ac.uk .",
             link: "mailto:zooyoutwo@gmail.com",
             linkText: "Contact us",
         },
