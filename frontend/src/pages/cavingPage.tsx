@@ -8,7 +8,7 @@ export default function CavingPage() {
     return (
         <div className="flex flex-col">
             <NavBar/>
-            <div className="h-screen bg-red-900">
+            <div className="m-10">
                 <EquipmentCarousel/>
             </div>
             <Footer/>
