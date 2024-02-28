@@ -14,8 +14,8 @@
 */
 export default function MailingList() {
     return (
-        <div className="mx-auto">
-            <div className="bg-white shadow sm:rounded-lg p-10">
+        <div className="mx-auto md:w-2/5">
+            <div className="bg-white shadow rounded-lg">
                 <div className="px-4 py-4 sm:p-6">
                     <h3 className="text-base font-semibold leading-6 text-gray-900">Join our mailing list</h3>
                     <form className="mt-5 sm:flex sm:items-center">
