@@ -11,6 +11,7 @@ import InvalidPage from "./pages/invalidPage";
 import GalleryPage from "./pages/galleryPage";
 import HomePage from './pages/HomePage';
 import CalenderPage from "./pages/calenderPage";
+import ApiPage from "./pages/apiPage";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
         path: '/gallery', element: <GalleryPage/>,
     }, {
         path: '/calender', element: <CalenderPage/>,
+    },{
+        path: '/api', element: <ApiPage/>,
     },
 
 ]);
