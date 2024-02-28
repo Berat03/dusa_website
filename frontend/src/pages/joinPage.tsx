@@ -10,9 +10,13 @@ export default function JoinPage() {
             <div>
                 <NavBar/>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col mx-auto items-center">
                 <ContactLinks/>
+            </div>
+
+            <div className="space-y-52">
                 <MailingList/>
+
             </div>
             <Footer/>
         </div>
