@@ -9,6 +9,7 @@ interface NavItem {
 
 const navigation: NavItem[] = [
     {name: "CAVING", to: "/caving"},
+    {name: "API", to: "/api"},
     {name: "CALENDER", to: "/calender"},
     {name: "GALLERY", to: "/gallery"},
     {name: "BLOG", to: "/blog"},
@@ -21,17 +22,16 @@ function classNames(...classes: (string)[]): string {
 
 // TypeScript component
 const NavBar: React.FC = () => {
-    // Define the type for the navLinkStyle function
     const navLinkStyle = ({isActive}: { isActive: boolean }): string =>
         classNames(
-            "rounded-md px-2 py-1 text-sm font-bold font-medium",
+            "rounded-md px-2 py-1 font-medium font-extrabold ",
             isActive
-                ? "text-white bg-gray-700"
-                : "hover:text-white hover:bg-gray-700",
+                ? "text-white bg-gray-700 font-extrabold "
+                : "hover:text-white hover:bg-gray-700 font-extrabold ",
         );
 
     return (
-        <Disclosure as="nav" className="bg-brown-900 font-4xl " style={{zIndex: 60}}>
+        <Disclosure as="nav" className="z-50 bg-brown-900 font-4xl font-extrabold " style={{zIndex: 60}}>
             {({open}) => (
                 <>
                     <div className="mx-auto  max-w-7xl px-2 sm:px-3 lg:px-6">
