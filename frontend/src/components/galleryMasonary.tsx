@@ -7,7 +7,7 @@ interface GalleryItemProps {
 
 const GalleryItem: React.FC<GalleryItemProps> = ({src, description}) => {
     return (
-        <div className="group relative cursor-pointer overflow-hidden rounded-md">
+        <div className="group relative cursor-pointer overflow-hidden rounded-lg">
             <img src={src} alt={description} className="object-cover w-full h-full"/>
             <div
                 className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-300 bg-black bg-opacity-50 group-hover:opacity-100">
