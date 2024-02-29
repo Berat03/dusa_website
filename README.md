@@ -36,7 +36,7 @@ The current [DUSA](https://speleologicalassociation.webspace.durham.ac.uk/) (Dur
 
 ### Implemented:
 - **Gallery**: Initial page including main image dir
-- **Blog**: Added blog cards, working on individual blog pages
+- **BlogFullScreen**: Added blog cards, working on individual blog pages
 - **Contact Page**: Added mailing list
 - **Landing Page**: Added basic images, stats and text to explain the club
 - **Backend**: Found AWS S3 buckets to be the best practical and financial approach
@@ -49,7 +49,7 @@ The current [DUSA](https://speleologicalassociation.webspace.durham.ac.uk/) (Dur
 ### Next Steps:
 - **Calender**: Add a Calender page
 - **Content**: Simplify fill with more context
-- **Backend**: Conntect Blog and Gallery backends to S3 buckets, will use Golang (good for backend's and also I like the language).
+- **Backend**: Connect Blog and Gallery backends to S3 buckets, will use Golang (good for backend's and also I like the language).
 
 ![Development Log 2](./logs/log2.gif)
 
