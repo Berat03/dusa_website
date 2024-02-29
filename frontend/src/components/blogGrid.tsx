@@ -2,70 +2,66 @@ import SearchBar from "./searchBar";
 import {useEffect, useState} from "react";
 import BlogCard from "./blogCard";
 
+import tempImg1 from "../assets/group_valley.jpg";
+import tempImg2 from "../assets/afterMyTrip.jpg";
+import tempImg3 from "../assets/noFaceM.jpg";
+import tempImg4 from "../assets/dusaDig.jpg";
+// can give post cat's colour tags
+// has both date and datetime property, can infer date from datetime.. do later when setting up backend
 const posts = [
     {
         id: 1,
-        title: "Boost your conversion rate",
-        href: "/",
-        description:
-            "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Berat",
-        imageUrl:
-            "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+        title: "Berat's first co-leading trip.",
+        href: "/indivblog",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Berat",
+        imageUrl: tempImg1,
         date: "Mar 16, 2020",
         datetime: "2020-03-16",
-        category: {title: "Dinnermeet", href: "#"},
+        categories: [{title: "Dinnermeet", href: "#"}],
     },
     {
         id: 2,
-        title: "Title 2",
+        title: "The aftermath of the trip.",
         href: "join",
-        description:
-            "cabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl:
-            "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        description: "cabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: tempImg2,
+        date: "Oct 23, 2023",
         datetime: "2020-03-16",
-        category: {title: "Chrimmermeet", href: "#"},
+        categories: [{title: "Chrimmermeet", href: "#"}, {title: "Valley Entrance", href: "#"}],
     },
     {
         id: 3,
-        title: "Does this work?",
+        title: "Are we going up or down?",
         href: "#",
-        description:
-            "Hola me gusta Berat donde esta la bibliotechique",
-        imageUrl:
-            "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        description: "Hola me gusta Berat donde esta la bibliotechique",
+        imageUrl: tempImg3,
+        date: "May 16, 2024",
         datetime: "2020-03-16",
-        category: {title: "Abroad", href: "#"},
+        categories: [{title: "Abroad", href: "#"}, {title: "Day Trip", href: "#"}],
     },
     {
         id: 4,
-        title: "Boost your conversion rate",
+        title: "George & Louie dig MaydayHole",
         href: "#",
-        description:
-            "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl:
-            "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: tempImg4,
+        date: "Jun 10, 2021",
         datetime: "2020-03-16",
-        category: {title: "Dinnermeet", href: "#"},
+        categories: [{title: "Dinnermeet", href: "#"}],
     },
 ];
 
 export default function BlogGrid() {
-    const [searchValue, setSearchValue] = useState(" ")
+    const [searchValue, setSearchValue] = useState(" ");
     const [filteredResults, setFilteredResults] = useState(posts);
-    // next two instance of filteredResults was filterResults
 
     useEffect(() => {
         const regex = new RegExp(searchValue, 'i');
         const filteredResults = posts.filter(item =>
-            regex.test(item.title) || regex.test(item.category.title) || regex.test(item.description)
+            regex.test(item.title) || item.categories.some(category => regex.test(category.title)) || regex.test(item.description)
         );
         setFilteredResults(filteredResults);
-    }, [searchValue, posts]); //ig do i really need posts??? no but should i?
-
+    }, [searchValue]);
 
     return (
         <div className="bg-white">
@@ -79,8 +75,7 @@ export default function BlogGrid() {
                     </p>
                 </div>
                 <SearchBar setSearchValue={setSearchValue}/>
-                <div
-                    className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {filteredResults.map((post) => (
                         <BlogCard post={post}/>
                     ))}
