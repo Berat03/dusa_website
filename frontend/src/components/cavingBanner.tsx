@@ -7,7 +7,7 @@ export default function CavingBanner() {
                 preRenderFirstString={true}
                 style={{whiteSpace: 'pre-line'}}
                 sequence={[
-                    500,
+                    1,
                     `So, you\'re interested \n in Caving?`,
                     3000,
                     'So, you\'re interested in ',
@@ -24,7 +24,7 @@ export default function CavingBanner() {
                     1500,
                     'So, you\'re interested in ',
                     500,
-                    'So, are you ready to go Caving? ',
+                    `So, you\'re interested \n in Caving?`,
                     3000,
                 ]}
                 speed={20}
