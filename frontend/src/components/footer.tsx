@@ -22,9 +22,9 @@ const navigation: Navigation = {
     main: [
         {name: 'About', href: '/'},
         {name: 'Blog', href: '/blog'},
+        {name: 'Calender', href: '/calender'},
         {name: 'Gallery', href: '/gallery'},
         {name: 'Join', href: '/join'},
-        {name: 'Partners', href: '#'},
     ],
     social: [
         {
