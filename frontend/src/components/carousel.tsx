@@ -1,12 +1,7 @@
-import React, {useState} from 'react';
-// Correct way to import when using TypeScript
-import {ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/24/outline';
-
+import React, { useState } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import img1 from '../assets/group_valley.jpg';
 import img2 from '../assets/afterMyTrip.jpg';
-
-
-
 
 const cardData = [
     {
@@ -16,7 +11,7 @@ const cardData = [
     },
     {
         title: 'Cows Tails',
-        content: 'So you don\'t die',
+        content: "So you don't die",
         imageUrl: img2,
     },
 ];
@@ -32,25 +27,23 @@ export default function Carousel() {
         setActiveCard((prevActiveCard) => (prevActiveCard - 1 + cardData.length) % cardData.length);
     };
 
-    const prevButtonStyle = activeCard === 0 ? "bg-gray-400 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-600 text-white";
-    const nextButtonStyle = activeCard === cardData.length - 1 ? "bg-gray-400 cursor-not-allowed" : "bg-gray-800 hover:bg-gray-600 text-white";
-
     return (
-        <div className="flex flex-col w-full items-center justify-center mt-3 relative">
-            <div className={`flex flex-col sm:flex-row w-full h-screen  relative`}>
-                <img src={cardData[activeCard].imageUrl} alt={cardData[activeCard].title}
-                     className="p-5 object-contain mx-auto"/>
+        <div className="flex flex-col w-full h-full items-center justify-center">
+            <div className="relative w-full max-w-4xlflex items-center justify-center">
+                <img src={cardData[activeCard].imageUrl} alt={cardData[activeCard].title} className="w-full h-full object-contain"/>
+
                 <button
-                    className={`absolute z-30 ml-4 left-0 top-1/2 z-30 transform -translate-y-1/2 px-4 py-2 rounded-full ${prevButtonStyle}`}
+                    className={`absolute left-8 transform -translate-x-1/2 top-1/2 z-10 px-4 py-2 rounded-full bg-gray-800 hover:bg-gray-600 text-white ${activeCard === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
                     onClick={prevCard}
                     disabled={activeCard === 0}>
-                    <ChevronLeftIcon className="h-6 w-6 text-white"/>
+                    <ChevronLeftIcon className="h-6 w-6"/>
                 </button>
+
                 <button
-                    className={`absolute right-0 mr-4 top-1/2 z-30 transform -translate-y-1/2 px-4 py-2 rounded-full ${nextButtonStyle}`}
+                    className={`absolute right-8 transform translate-x-1/2 top-1/2 z-10 px-4 py-2 rounded-full bg-gray-800 hover:bg-gray-600 text-white ${activeCard === cardData.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
                     onClick={nextCard}
                     disabled={activeCard === cardData.length - 1}>
-                    <ChevronRightIcon className="h-6 w-6 text-red"/>
+                    <ChevronRightIcon className="h-6 w-6"/>
                 </button>
             </div>
         </div>
