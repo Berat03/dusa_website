@@ -1,7 +1,13 @@
-import Carousel from "./carousel";
+import BlogIndivCarousel from "./blogIndivCarousel";
+import ScrollNavBar from "./scrollNavBar";
 
 export default function BlogFullScreen() {
     return (
-        <Carousel/>
+        <div>
+
+            <ScrollNavBar/>
+            <BlogIndivCarousel/>
+
+        </div>
     )
 }

@@ -5,7 +5,7 @@ import ScrollNavBar from "../components/scrollNavBar";
 
 export default function BlogPage() {
     return (
-        <div>
+        <div className="w-full">
             <ScrollNavBar/>
             <BlogGrid/>
             <Footer/>
