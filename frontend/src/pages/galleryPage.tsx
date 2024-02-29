@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import NavBar from "../components/navBar";
 import SearchBar from "../components/searchBar";
 import MasonryGallery from "../components/galleryMasonary"; // Ensure correct import path
 import Img_1 from "../assets/MaydayJakub.jpg";
@@ -11,6 +10,8 @@ import Img_6 from "../assets/srt.jpg";
 import Img_7 from "../assets/nev.jpg";
 import Img_8 from "../assets/rift.jpg";
 import Footer from "../components/footer";
+import ScrollNavBar from "../components/ScrollNavBar";
+import NavBar from "../components/navBar";
 
 const images = [
     {
@@ -70,19 +71,25 @@ export default function GalleryPage() {
     }, [searchValue]);
 
     return (
-        <div className="h-screen">
-            <NavBar/>
-            <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Our images
-                </h2>
-                <p className="mt-2 text-lg leading-8 text-gray-600">
-                    View the decades of DUSA legacy
-                </p>
+        <div>
+            <div className="sticky top-0 w-full z-50"> {/*Don't know why I need to styling AGAIN */}
+                <ScrollNavBar/>
             </div>
-            <SearchBar setSearchValue={setSearchValue}/>
-            <MasonryGallery images={filteredResults}/>
-            <Footer/>
+            <div className="h-screen">
+
+                <div className="mx-auto max-w-2xl text-center">
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Our images
+                    </h2>
+                    <p className="mt-2 text-lg leading-8 text-gray-600">
+                        View the decades of DUSA legacy
+                    </p>
+                </div>
+                <SearchBar setSearchValue={setSearchValue}/>
+                <MasonryGallery images={filteredResults}/>
+                <Footer/>
+            </div>
         </div>
+
     );
 }

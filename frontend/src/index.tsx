@@ -9,10 +9,10 @@ import Blog from "./pages/blog";
 import CavingPage from "./pages/cavingPage";
 import InvalidPage from "./pages/invalidPage";
 import GalleryPage from "./pages/galleryPage";
-import HomePage from './pages/HomePage';
+import HomePage from './pages/homePage';
 import CalenderPage from "./pages/calenderPage";
 import ApiPage from "./pages/apiPage";
-
+import IndivBlogPage from "./pages/indivBlogPage"
 const router = createBrowserRouter([
     {
         path: '/', element: <HomePage/>,
@@ -30,6 +30,8 @@ const router = createBrowserRouter([
         path: '/calender', element: <CalenderPage/>,
     }, {
         path: '/api', element: <ApiPage/>,
+    },{
+        path: '/blog/indiv', element: <IndivBlogPage/>,
     },
 
 ]);

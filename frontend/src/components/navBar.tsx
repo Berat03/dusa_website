@@ -31,7 +31,7 @@ const NavBar: React.FC = () => {
         );
 
     return (
-        <Disclosure as="nav" className="z-50 bg-brown-900 font-4xl font-extrabold " style={{zIndex: 60}}>
+        <Disclosure as="nav" className="sticky top-0 w-full z-50 bg-brown-900 p-2 font-4xl font-extrabold " style={{zIndex: 60}}>
             {({open}) => (
                 <>
                     <div className="mx-auto  max-w-7xl px-2 sm:px-3 lg:px-6">

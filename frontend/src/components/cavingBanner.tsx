@@ -24,7 +24,7 @@ export default function CavingBanner() {
                     1500,
                     'So, you\'re interested in ',
                     500,
-                    'So, are you reading to go Caving? ',
+                    'So, are you ready to go Caving? ',
                     3000,
                 ]}
                 speed={20}

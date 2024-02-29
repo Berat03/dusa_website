@@ -2,11 +2,12 @@ import React from "react";
 import BlogGrid from "../components/blogGrid";
 import NavBar from "../components/navBar";
 import Footer from "../components/footer";
+import ScrollNavBar from "../components/ScrollNavBar";
 
 export default function Blog() {
     return (
         <div>
-            <NavBar/>
+            <ScrollNavBar/>
             <BlogGrid/>
             <Footer/>
         </div>

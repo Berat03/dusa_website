@@ -3,12 +3,13 @@ import React from "react";
 import ContactLinks from "../components/contactLinks";
 import MailingList from "../components/mailingList";
 import Footer from "../components/footer";
+import ScrollNavBar from "../components/ScrollNavBar";
 
 export default function JoinPage() {
     return (
         <div className="">
-            <div>
-                <NavBar/>
+            <div className="sticky top-0 w-full z-50 ">
+                <ScrollNavBar/>
             </div>
             <div className="flex flex-col mx-auto items-center">
                 <ContactLinks/>

@@ -13,7 +13,6 @@ const GalleryItem: React.FC<GalleryItemProps> = ({src, description}) => {
                 className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-300 bg-black bg-opacity-50 group-hover:opacity-100">
                 <div className="text-white">
                     <p className="mb-2 text-sm font-bold">{description}</p>
-                    <button className="rounded bg-red-500 px-3 py-1 text-xs">Share</button>
                 </div>
             </div>
         </div>
