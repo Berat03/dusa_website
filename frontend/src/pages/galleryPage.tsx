@@ -10,7 +10,7 @@ import Img_6 from "../assets/srt.jpg";
 import Img_7 from "../assets/nev.jpg";
 import Img_8 from "../assets/rift.jpg";
 import Footer from "../components/footer";
-import ScrollNavBar from "../components/ScrollNavBar";
+import ScrollNavBar from "../components/scrollNavBar";
 import NavBar from "../components/navBar";
 
 const images = [

@@ -3,7 +3,7 @@ import React from "react";
 import ContactLinks from "../components/contactLinks";
 import MailingList from "../components/mailingList";
 import Footer from "../components/footer";
-import ScrollNavBar from "../components/ScrollNavBar";
+import ScrollNavBar from "../components/scrollNavBar";
 
 export default function JoinPage() {
     return (

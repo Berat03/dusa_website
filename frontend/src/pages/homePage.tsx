@@ -3,7 +3,7 @@ import ParallaxComposition from "../components/parallaxComposition";
 import ClubStats from "../components/clubStats";
 import Footer from "../components/footer";
 import ImageTilesHalfPageText from "../components/imageTilesHalfPageText";
-import ScrollNavBar from "../components/ScrollNavBar";
+import ScrollNavBar from "../components/scrollNavBar";
 
 // style={{backgroundColor:'rgb(10,20,28)'}}
 export default function HomePage() {

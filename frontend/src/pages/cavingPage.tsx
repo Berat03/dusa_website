@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 import CavingBanner from "../components/cavingBanner";
 import ImageBgOverlapTextFull from "../components/imageBgOverlapTextFull";
 import Img from "../assets/me_stuck.jpg"
-import ScrollNavBar from "../components/ScrollNavBar";
+import ScrollNavBar from "../components/scrollNavBar";
 
 export default function CavingPage() {
     return (
