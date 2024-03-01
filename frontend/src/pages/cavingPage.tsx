@@ -10,7 +10,7 @@ import ScrollNavBar from "../components/scrollNavBar";
 export default function CavingPage() {
     return (
         <div className="w-full bg-orange-900">
-            <div className="z-50">
+            <div className="sticky top-0 z-50">
                 <ScrollNavBar/>
             </div>
             <div className="h-screen">
