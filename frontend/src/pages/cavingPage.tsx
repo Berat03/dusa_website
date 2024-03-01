@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../components/navBar";
 import EquipmentCarousel from "../components/equipmentCarousel";
 import Footer from "../components/footer";
 import CavingBanner from "../components/cavingBanner";
@@ -9,7 +8,7 @@ import ScrollNavBar from "../components/scrollNavBar";
 
 export default function CavingPage() {
     return (
-        <div className="w-full bg-orange-900">
+        <div className="w-full " style={{backgroundColor: 'rgb(10,20,28)'}}>
             <div className="sticky top-0 z-50">
                 <ScrollNavBar/>
             </div>

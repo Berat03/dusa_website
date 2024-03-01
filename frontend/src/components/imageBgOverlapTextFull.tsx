@@ -11,7 +11,6 @@ interface ImageBgOverlapTextFullProps {
 const ImageBgOverlapTextFull: React.FC<ImageBgOverlapTextFullProps> = ({title, description, image}) => {
     const style: React.CSSProperties = {
         backgroundImage: `url(${image})`,
-        backgroundSize: 'cover',
     };
 
     return (
@@ -23,7 +22,7 @@ const ImageBgOverlapTextFull: React.FC<ImageBgOverlapTextFullProps> = ({title, d
                     <p className={"font-extrabold text-xl md:text-xl lg:text-2xl "}>{description}</p>
                 </div>
             </div>
-            <div className="absolute inset-0 w-full h-full" style={style}></div>
+            <div className="absolute inset-0 w-full h-full object-cover object-center" style={style}></div>
         </div>
     );
 };
