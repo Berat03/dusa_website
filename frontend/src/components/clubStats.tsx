@@ -16,7 +16,7 @@ export default function ClubStats() {
                 src={Img}
                 alt=""
             />
-            <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
+            <div className="mx-auto grid max-w-7xl lg:grid-cols-2" >
                 <div className="px-6 pb-24 pt-16 sm:pb-32 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32">
                     <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
                         <h2 className="text-base font-semibold leading-8 text-blue-800">
@@ -30,7 +30,7 @@ export default function ClubStats() {
                             impedit perferendis suscipit eaque, iste dolor cupiditate
                             blanditiis ratione.
                         </p>
-                        <dl className="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
+                        <dl className="mt-10 grid max-w-xl grid-cols-1 gap-8 sm:mt-15 sm:grid-cols-2 xl:mt-15">
                             {stats.map((stat) => (
                                 <div
                                     key={stat.id}
