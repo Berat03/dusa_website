@@ -5,30 +5,31 @@ import Footer from "../components/footer";
 import ImageTilesHalfPageText from "../components/imageTilesHalfPageText";
 import ScrollNavBar from "../components/scrollNavBar";
 import ImageGridDescription from "../components/imageGridDescription";
+import SplitImageRight from "../components/splitImageRight";
 
 // style={{backgroundColor:'rgb(10,20,28)'}}
 export default function HomePage() {
     return (
-        <div className="flex flex-col ">
+        <div className="flex flex-col" style={{backgroundColor: 'rgb(10,20,28)'}}>
             <div className="sticky top-0 w-full z-50 ">
                 <ScrollNavBar/>
             </div>
-            <div className="h-screen">
+            <div className="h-screen -mt-36">
                 <ParallaxComposition/>
             </div>
-            <div>
-                <ImageGridDescription/>
-            </div>
-            <div className="mb-72 sm:mb-48 md:mb-0">
+            <ImageGridDescription/>
+
+
+            <div className="">
                 <ClubStats/>
             </div>
-            <div >
+            <div className="relative sm:mt-5" style={{backgroundColor: 'rgb(10,20,28)'}}>
                 <ImageTilesHalfPageText/>
             </div>
+            <SplitImageRight/>
 
-            <div>
-                <Footer/>
-            </div>
+
+            <Footer/>
         </div>
     );
 }

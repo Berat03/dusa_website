@@ -1,5 +1,4 @@
 import React from "react";
-import Img from "../assets/MaydayJakub.jpg";
 
 const stats = [
     {id: 1, name: "New members", value: "45+"},
@@ -13,7 +12,7 @@ export default function ClubStats() {
         <div className="relative bg-white h-screen">
             <img
                 className="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
-                src={Img}
+                src="https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/lastPitchMayday.jpg"
                 alt=""
             />
             <div className="mx-auto grid max-w-7xl lg:grid-cols-2" >

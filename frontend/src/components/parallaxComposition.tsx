@@ -17,7 +17,7 @@ import last_walls from "../assets/parallaxImages/last_walls.png";
 // it has it's own scroll window, can access using ref, see docs
 export default function ParallaxComposition() {
     return (
-        <Parallax pages={1.2} className="" >
+        <Parallax pages={1.1} className="" >
             <ParallaxLayer offset={0} speed={0.3} style={{zIndex: 50}}>
                 <h1 className="flex justify-center items-center text-6xl text-black font-extrabold mt-10 p-32">
                     ADVENTURE AWAITS
