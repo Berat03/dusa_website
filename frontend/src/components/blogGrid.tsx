@@ -2,10 +2,6 @@ import SearchBar from "./searchBar";
 import {useEffect, useState} from "react";
 import BlogCard from "./blogCard";
 
-import tempImg1 from "../assets/group_valley.jpg";
-import tempImg2 from "../assets/afterMyTrip.jpg";
-import tempImg3 from "../assets/noFaceM.jpg";
-import tempImg4 from "../assets/dusaDig.jpg";
 // can give post cat's colour tags
 // has both date and datetime property, can infer date from datetime.. do later when setting up backend
 const posts = [
@@ -14,7 +10,7 @@ const posts = [
         title: "Berat's first co-leading trip.",
         href: "/indivblog",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Berat",
-        imageUrl: tempImg1,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/dalesImage-min.jpg",
         date: "Mar 16, 2020",
         datetime: "2020-03-16",
         categories: [{title: "Dinnermeet", href: "#"}],
@@ -24,7 +20,7 @@ const posts = [
         title: "The aftermath of the trip.",
         href: "join",
         description: "cabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: tempImg2,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/afterMyTrip-min.jpg",
         date: "Oct 23, 2023",
         datetime: "2020-03-16",
         categories: [{title: "Chrimmermeet", href: "#"}, {title: "Valley Entrance", href: "#"}],
@@ -34,7 +30,7 @@ const posts = [
         title: "Are we going up or down?",
         href: "#",
         description: "Hola me gusta Berat donde esta la bibliotechique",
-        imageUrl: tempImg3,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/me_stuck-min.jpg",
         date: "May 16, 2024",
         datetime: "2020-03-16",
         categories: [{title: "Abroad", href: "#"}, {title: "Day Trip", href: "#"}],
@@ -44,7 +40,7 @@ const posts = [
         title: "George & Louie dig MaydayHole",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: tempImg4,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/noFaceM-min.jpg",
         date: "Jun 10, 2021",
         datetime: "2020-03-16",
         categories: [{title: "Dinnermeet", href: "#"}],

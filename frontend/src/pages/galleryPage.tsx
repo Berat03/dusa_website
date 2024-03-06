@@ -1,58 +1,35 @@
 import React, {useEffect, useState} from 'react';
 import SearchBar from "../components/searchBar";
 import MasonryGallery from "../components/galleryMasonary"; // Ensure correct import path
-import Img_1 from "../assets/MaydayJakub.jpg";
-import Img_2 from "../assets/dalesImage.jpg";
-import Img_3 from "../assets/ianImage.jpg";
-import Img_4 from "../assets/noFaceM.jpg";
-import Img_5 from "../assets/me_stuck.jpg";
-import Img_6 from "../assets/srt.jpg";
-import Img_7 from "../assets/nev.jpg";
-import Img_8 from "../assets/rift.jpg";
+
 import Footer from "../components/footer";
 import ScrollNavBar from "../components/scrollNavBar";
-import NavBar from "../components/navBar";
 
 const images = [
     {
-        imageUrl: Img_1,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/me_stuck-min.jpg",
         title: "Most representative photo",
         category: "chrimmermeet",
     },
     {
-        imageUrl: Img_2,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/afterMyTrip-min.jpg",
         title: "Chosen when user first inputs",
         category: "dinnermeet",
     },
     {
-        imageUrl: Img_3,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/dalesImage-min.jpg",
         title: "Sick photo",
         category: "Leader Training",
     },
     {
-        imageUrl: Img_4,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/group_valley-min.jpg",
         title: "ascending",
         category: "normal trip",
     },
     {
-        imageUrl: Img_5,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/dalesImage-min.jpg",
         title: "extra photo",
         category: "my trip",
-    },
-    {
-        imageUrl: Img_6,
-        title: "stuck",
-        category: "SRT training",
-    },
-    {
-        imageUrl: Img_7,
-        title: "nev",
-        category: "SRT training",
-    },
-    {
-        imageUrl: Img_8,
-        title: "rift",
-        category: "my first trip calf holes",
     },
 ];
 

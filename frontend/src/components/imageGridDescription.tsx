@@ -1,8 +1,3 @@
-import img1 from "../assets/srt.jpg"
-import img2 from "../assets/group_valley.jpg"
-import img3 from "../assets/rift.jpg"
-import img4 from "../assets/MaydayJakub.jpg"
-
 const features = [
   { name: 'Founded', description: 'Active since 1969...' },
   { name: 'Training', description: 'Bridge training and leader training' },
@@ -33,22 +28,22 @@ export default function ImageGridDescription() {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <img
-            src={img1}
+            src="https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/me_stuck-min.jpg"
             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
             className="rounded-lg w-72 h-72 bg-gray-100 object-cover"
           />
           <img
-            src={img2}
+            src="https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/nev-min.jpg"
             alt="Top down view of walnut card tray with embedded magnets and card groove."
             className="rounded-lg w-72 h-72 bg-gray-100 object-cover"
           />
           <img
-            src={img3}
+            src="https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/lastPitchMayday.jpg"
             alt="Side of walnut card tray with card groove and recessed card area."
             className="rounded-lg w-72 h-72 bg-gray-100 object-cover"
           />
           <img
-            src={img4}
+            src="https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/ianImage-min.jpg"
             alt="Walnut card tray filled with cards and card angled in dedicated groove."
             className="rounded-lg w-72 h-72 bg-gray-100 object-cover"
           />

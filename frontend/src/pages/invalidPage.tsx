@@ -1,4 +1,4 @@
-import Img from "../assets/dalesImage.jpg";
+
 import {NavLink} from "react-router-dom";
 import Footer from "../components/footer";
 
@@ -7,7 +7,7 @@ export default function InvalidPage() {
         <>
             <main className="relative isolate min-h-full">
                 <img
-                    src={Img}
+                    src="https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/dalesImage-min.jpg"
                     alt=""
                     className="absolute -z-20 h-screen w-full object-cover object-top"
                 />

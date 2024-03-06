@@ -9,7 +9,11 @@ module.exports = {
     "./src/components/*.{ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom_bg': 'rgb(8,18,26)',
+      },
+    },
   },
   variants: {},
   plugins: [

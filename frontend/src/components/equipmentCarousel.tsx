@@ -2,28 +2,19 @@ import React, {useState} from 'react';
 // Correct way to import when using TypeScript
 import {ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/24/outline';
 
-import descenderImage from '../assets/equipmentCardImages/Descender.png';
-import cowsTailsImage from '../assets/equipmentCardImages/Descender.png';
-import harnessImage from '../assets/equipmentCardImages/Descender.png';
 
 const cardData = [
     {
         color: 'bg-stone-900',
         title: 'Descender',
         content: 'To go down safely, slower than jumping.',
-        imageUrl: descenderImage,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/Descender.png",
     },
     {
         color: 'bg-stone-800',
-        title: 'Cows Tails',
-        content: 'So you don\'t die',
-        imageUrl: cowsTailsImage,
-    },
-    {
-        color: 'bg-stone-700',
-        title: 'Harness',
-        content: 'Makes your bum look big and hurts your waist, can also kill you if you stay in it too long',
-        imageUrl: harnessImage,
+        title: 'Chest Ascender',
+        content: 'So you don\'t die and can leave the cave',
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/ascender_chest.png",
     },
 ];
 

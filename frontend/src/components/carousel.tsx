@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-import img1 from '../assets/group_valley.jpg';
-import img2 from '../assets/afterMyTrip.jpg';
-
 const cardData = [
     {
         title: 'Descender',
         content: 'To go down safely, slower than jumping.',
-        imageUrl: img1,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/Descender.png",
     },
     {
-        title: 'Cows Tails',
+        title: 'Chest Ascender',
         content: "So you don't die",
-        imageUrl: img2,
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/ascender_chest.png",
     },
 ];
 

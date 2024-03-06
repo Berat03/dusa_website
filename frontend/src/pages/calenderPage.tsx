@@ -1,4 +1,3 @@
-import NavBar from "../components/navBar";
 import CalendarCalendar from "../components/calenderCalender";
 import ScrollNavBar from "../components/scrollNavBar";
 
