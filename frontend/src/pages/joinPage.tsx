@@ -1,4 +1,3 @@
-import NavBar from "../components/navBar";
 import React from "react";
 import ContactLinks from "../components/contactLinks";
 import MailingList from "../components/mailingList";
