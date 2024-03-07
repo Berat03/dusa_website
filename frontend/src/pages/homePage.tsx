@@ -6,6 +6,8 @@ import ImageTilesHalfPageText from "../components/imageTilesHalfPageText";
 import ScrollNavBar from "../components/scrollNavBar";
 import ImageGridDescription from "../components/imageGridDescription";
 import SplitImageRight from "../components/splitImageRight";
+import TripleImage from "../components/tripleImage";
+import OurTeam from "../components/ourTeam";
 
 // style={{backgroundColor:'rgb(10,20,28)'}}
 export default function HomePage() {
@@ -23,11 +25,14 @@ export default function HomePage() {
             <div className="">
                 <ClubStats/>
             </div>
+                        <TripleImage/>
+
             <div className="relative sm:mt-5" style={{backgroundColor: 'rgb(10,20,28)'}}>
                 <ImageTilesHalfPageText/>
             </div>
             <SplitImageRight/>
 
+            <OurTeam/>
 
             <Footer/>
         </div>
