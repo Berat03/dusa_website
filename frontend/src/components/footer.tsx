@@ -25,6 +25,7 @@ const navigation: Navigation = {
         {name: 'Calender', href: '/calender'},
         {name: 'Gallery', href: '/gallery'},
         {name: 'Join', href: '/join'},
+        {name: 'Admin', href: '/login'},
     ],
     social: [
         {
