@@ -1,43 +1,37 @@
-import React from 'react';
-
-interface GalleryItemProps {
-    src: string;
-    description: string;
-}
-
-const GalleryItem: React.FC<GalleryItemProps> = ({src, description}) => {
-    return (
-        <div className="group relative cursor-pointer overflow-hidden rounded-lg">
-            <img src={src} alt={description} className="object-cover w-full h-full"/>
-            <div
-                className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-300 bg-black bg-opacity-50 group-hover:opacity-100">
-                <div className="text-white">
-                    <p className="mb-2 text-sm font-bold">{description}</p>
-                </div>
-            </div>
-        </div>
-    );
-}
-
+// GalleryMasonry.tsx
+import React, { useState } from 'react';
+import GalleryItem from './galleryItem';
+import GalleryFullSize from './galleryFullSize';
 
 interface ImageData {
-    imageUrl: string;
-    title: string;
-    category: string;
+  imageUrl: string; // Required
+  title?: string; // Optional
+  category?: string; // Optional
 }
 
 interface MasonryGalleryProps {
-    images: ImageData[];
+  images: ImageData[];
 }
 
-const GalleryMasonary: React.FC<MasonryGalleryProps> = ({images}) => {
-    return (
-        <div className="columns-1 gap-4 space-y-4 p-4 sm:columns-2 md:columns-3 lg:columns-4">
-            {images.map((item, index) => (
-                <GalleryItem key={index} src={item.imageUrl} description={item.title}/>
-            ))}
-        </div>
-    );
-}
+const GalleryMasonry: React.FC<MasonryGalleryProps> = ({ images }) => {
+  const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
 
-export default GalleryMasonary;
+  const handleItemClick = (imageUrl: string, title?: string) => {
+    setSelectedImage({ imageUrl, title }); // No need to set category if not used in Overlay
+  };
+
+  const handleClose = () => setSelectedImage(null);
+
+  return (
+    <div className="columns-1 gap-4 space-y-4 p-4 sm:columns-2 md:columns-3 lg:columns-4">
+      {images.map((item, index) => (
+        <GalleryItem key={index} src={item.imageUrl} description={item.title} onClick={handleItemClick} />
+      ))}
+      {selectedImage && (
+        <GalleryFullSize src={selectedImage.imageUrl} description={selectedImage.title} onClose={handleClose} />
+      )}
+    </div>
+  );
+};
+
+export default GalleryMasonry;

@@ -8,7 +8,7 @@ import ScrollNavBar from "../components/scrollNavBar";
 const images = [
     {
         imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/me_stuck-min.jpg",
-        title: "Most representative photo",
+        title: "my fav photo",
         category: "chrimmermeet",
     },
     {
@@ -17,20 +17,32 @@ const images = [
         category: "dinnermeet",
     },
     {
-        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/dalesImage-min.jpg",
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/squeezeBox.jpg",
         title: "Sick photo",
         category: "Leader Training",
     },
     {
         imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/group_valley-min.jpg",
         title: "ascending",
-        category: "normal trip",
+        category: "Day Trip",
     },
     {
         imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/dalesImage-min.jpg",
         title: "extra photo",
-        category: "my trip",
+        category: "Weekend Trip",
     },
+    {
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/hannah.jpg",
+        title: "alum",
+        category: "Leader Training",
+    },
+    {
+        imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/confused.jpg\n",
+        title: "confused",
+        category: "Leader Training",
+    },
+
+
 ];
 
 export default function GalleryPage() {
