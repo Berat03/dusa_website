@@ -12,7 +12,7 @@ import GalleryPage from "./pages/galleryPage";
 import HomePage from './pages/homePage';
 import CalenderPage from "./pages/calenderPage";
 import ApiPage from "./pages/apiPage";
-import BlogFullScreen from "./components/blogFullScreen";
+import BlogFullScreen from "./components/blog/blogFullScreen";
 const router = createBrowserRouter([
     {
         path: '/', element: <HomePage/>,

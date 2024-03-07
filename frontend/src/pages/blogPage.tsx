@@ -1,5 +1,5 @@
 import React from "react";
-import BlogGrid from "../components/blogGrid";
+import BlogGrid from "../components/blog/blogGrid";
 import Footer from "../components/footer";
 import ScrollNavBar from "../components/scrollNavBar";
 
