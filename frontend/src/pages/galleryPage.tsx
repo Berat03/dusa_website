@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import SearchBar from "../components/searchBar";
-import MasonryGallery from "../components/galleryMasonary"; // Ensure correct import path
+import MasonryGallery from "../components/gallery/galleryMasonary"; // Ensure correct import path
 
 import Footer from "../components/footer";
 import ScrollNavBar from "../components/scrollNavBar";
