@@ -1,34 +1,13 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const Example = () => {
-  return (
-    <div className="flex justify-evenly flex-row bg-custom_bg">
-      <div className=" px-4 py-12 text-slate-900">
-        <TiltCard text="Warm fleece or Jumper" />
-      </div>
-      <div className="px-4 py-12 text-slate-900">
-        <TiltCard text="A change of clothes" />
-      </div>
-      <div className="px-4 py-12 text-slate-900">
-        <TiltCard text="Base layers" />
-      </div>
-      <div className="px-4 py-12 text-slate-900">
-        <TiltCard text="Wellies (we might be able to provide)" />
-      </div>
-    </div>
-  );
-};
-
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
-// Define the interface for TiltCard props
 interface TiltCardProps {
-  text: string; // This specifies that the `text` prop should be a string
+  text: string;
 }
 
-// Use the TiltCardProps interface to type the props parameter
 const TiltCard = ({ text }: TiltCardProps) => {
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -93,4 +72,4 @@ const TiltCard = ({ text }: TiltCardProps) => {
   );
 };
 
-export default Example;
+export default TiltCard;
