@@ -1,4 +1,3 @@
-import NavBar from "../components/navBar";
 import ScrollNavBar from "../components/scrollNavBar";
 
 export default function ApiPage() {
