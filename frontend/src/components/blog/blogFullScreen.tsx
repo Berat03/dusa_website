@@ -1,12 +1,15 @@
 import ScrollNavBar from "../scrollNavBar";
-import BlogCarousel from "./blogCarousel";
+import BlogFullHeader from "./blogFullHeader";
+
+
+
+
 
 export default function BlogFullScreen() {
     return (
         <div>
-
             <ScrollNavBar/>
-            <BlogCarousel/>
+            <BlogFullHeader/>
 
         </div>
     )
