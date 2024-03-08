@@ -2,7 +2,7 @@ import React from "react";
 import ParallaxComposition from "../components/home/parallaxComposition";
 import ClubStats from "../components/home/clubStats";
 import Footer from "../components/repeats/footer";
-import ImageTilesHalfPageText from "../components/imageTilesHalfPageText";
+import ImageTilesHalfPageText from "../components/home/imageTilesHalfPageText";
 import ScrollNavBar from "../components/repeats/scrollNavBar";
 import ImageGridDescription from "../components/home/imageGridDescription";
 import SplitImageRight from "../components/home/splitImageRight";
