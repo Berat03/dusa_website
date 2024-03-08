@@ -12,7 +12,7 @@ import GalleryPage from "./pages/galleryPage";
 import CalenderPage from "./pages/calenderPage";
 import ApiPage from "./pages/apiPage";
 import BlogFullScreen from "./components/blog/blogFullScreen";
-import LoginPage from './pages/LoginPage'; // Assuming LoginPage.tsx is in the src folder
+import LoginPage from './pages/loginPage'; // Assuming loginPage.tsx is in the src folder
 import AdminPage from './pages/adminPage'; // Assuming AdminPage.tsx is in the src folder
 import RequireAuth from './auth/requireAuth'; // Assuming RequireAuth.tsx is in the src folder
 
