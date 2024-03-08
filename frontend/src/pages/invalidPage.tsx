@@ -1,6 +1,6 @@
 
 import {NavLink} from "react-router-dom";
-import Footer from "../components/footer";
+import Footer from "../components/repeats/footer";
 
 export default function InvalidPage() {
     return (

@@ -1,8 +1,8 @@
 import React from "react";
-import ContactLinks from "../components/contactLinks";
-import MailingList from "../components/mailingList";
-import Footer from "../components/footer";
-import ScrollNavBar from "../components/scrollNavBar";
+import ContactLinks from "../components/join/contactLinks";
+import MailingList from "../components/join/mailingList";
+import Footer from "../components/repeats/footer";
+import ScrollNavBar from "../components/repeats/scrollNavBar";
 
 export default function JoinPage() {
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import BlogGrid from "../components/blog/blogGrid";
-import Footer from "../components/footer";
-import ScrollNavBar from "../components/scrollNavBar";
+import Footer from "../components/repeats/footer";
+import ScrollNavBar from "../components/repeats/scrollNavBar";
 
 export default function BlogPage() {
     return (

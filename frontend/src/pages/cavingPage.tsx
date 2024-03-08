@@ -1,11 +1,11 @@
 import React from "react";
-import Footer from "../components/footer";
-import CavingBanner from "../components/cavingBanner";
+import Footer from "../components/repeats/footer";
+import CavingBanner from "../components/caving/cavingBanner";
 import ImageBgOverlapTextFull from "../components/imageBgOverlapTextFull";
-import ScrollNavBar from "../components/scrollNavBar";
-import TripleTextColumn from "../components/tripleTextColumn";
-import CavingVideo from "../components/cavingVideo";
-import Testimonials from "../components/testimonials";
+import ScrollNavBar from "../components/repeats/scrollNavBar";
+import TripleTextColumn from "../components/caving/tripleTextColumn";
+import CavingVideo from "../components/caving/cavingVideo";
+import Testimonials from "../components/caving/testimonials";
 
 export default function CavingPage() {
     return (

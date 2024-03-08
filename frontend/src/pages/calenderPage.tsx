@@ -1,5 +1,5 @@
-import CalendarCalendar from "../components/calenderCalender";
-import ScrollNavBar from "../components/scrollNavBar";
+import CalendarCalendar from "../components/calender/calenderCalender";
+import ScrollNavBar from "../components/repeats/scrollNavBar";
 
 export default function CalenderPage() {
     return (

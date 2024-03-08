@@ -3,15 +3,15 @@ import {Parallax, ParallaxLayer} from "@react-spring/parallax";
 
 // do: correctly rename the layers
 // CONVERT TO SVG!more optimised for performance and resolution
-import lay_0 from "../assets/parallaxImages/bottom.png";
-import lay_1 from "../assets/parallaxImages/low_layer.png";
-import lay_2 from "../assets/parallaxImages/Caver_Layer.png";
-import lay_3 from "../assets/parallaxImages/after_caver_not_water.png";
-import stars from "../assets/parallaxImages/stars.png";
-import lay_5 from "../assets/parallaxImages/middleLayers.png";
-import lay_6 from "../assets/parallaxImages/sideWalls.png";
-import water from "../assets/parallaxImages/water.png";
-import last_walls from "../assets/parallaxImages/last_walls.png";
+import lay_0 from "../../assets/parallaxImages/bottom.png";
+import lay_1 from "../../assets/parallaxImages/low_layer.png";
+import lay_2 from "../../assets/parallaxImages/Caver_Layer.png";
+import lay_3 from "../../assets/parallaxImages/after_caver_not_water.png";
+import stars from "../../assets/parallaxImages/stars.png";
+import lay_5 from "../../assets/parallaxImages/middleLayers.png";
+import lay_6 from "../../assets/parallaxImages/sideWalls.png";
+import water from "../../assets/parallaxImages/water.png";
+import last_walls from "../../assets/parallaxImages/last_walls.png";
 
 
 // it has it's own scroll window, can access using ref, see docs

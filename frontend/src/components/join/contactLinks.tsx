@@ -1,6 +1,6 @@
 import {EnvelopeIcon} from "@heroicons/react/24/outline";
-import InstagramLogo from "./instagramLogo";
-import FacebookLogo from "./facebookLogo";
+import InstagramLogo from "../svg/instagramLogo";
+import FacebookLogo from "../svg/facebookLogo";
 
 export default function ContactLinks() {
     const contactMethods = [

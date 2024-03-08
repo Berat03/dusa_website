@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import BlogPost from '../components/admin/postBlog';
 import TabBar from "../components/admin/tabBar";
-import ScrollNavBar from "../components/scrollNavBar"; // Adjust the import path as necessary
+import ScrollNavBar from "../components/repeats/scrollNavBar"; // Adjust the import path as necessary
 // Import ScrollNavBar or any other components you need
 
 function AdminPage() {

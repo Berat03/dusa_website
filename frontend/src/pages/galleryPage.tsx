@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import SearchBar from "../components/searchBar";
 import MasonryGallery from "../components/gallery/galleryMasonary"; // Ensure correct import path
 
-import Footer from "../components/footer";
-import ScrollNavBar from "../components/scrollNavBar";
+import Footer from "../components/repeats/footer";
+import ScrollNavBar from "../components/repeats/scrollNavBar";
 
 const images = [
     {

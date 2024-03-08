@@ -1,4 +1,4 @@
-import ScrollNavBar from "../scrollNavBar";
+import ScrollNavBar from "../repeats/scrollNavBar";
 import BlogFullHeader from "./blogFullHeader";
 
 

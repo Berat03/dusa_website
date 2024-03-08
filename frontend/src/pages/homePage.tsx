@@ -1,13 +1,13 @@
 import React from "react";
-import ParallaxComposition from "../components/parallaxComposition";
-import ClubStats from "../components/clubStats";
-import Footer from "../components/footer";
+import ParallaxComposition from "../components/home/parallaxComposition";
+import ClubStats from "../components/home/clubStats";
+import Footer from "../components/repeats/footer";
 import ImageTilesHalfPageText from "../components/imageTilesHalfPageText";
-import ScrollNavBar from "../components/scrollNavBar";
-import ImageGridDescription from "../components/imageGridDescription";
-import SplitImageRight from "../components/splitImageRight";
-import TripleImage from "../components/tripleImage";
-import OurTeam from "../components/ourTeam";
+import ScrollNavBar from "../components/repeats/scrollNavBar";
+import ImageGridDescription from "../components/home/imageGridDescription";
+import SplitImageRight from "../components/home/splitImageRight";
+import TripleImage from "../components/home/tripleImage";
+import OurTeam from "../components/home/ourTeam";
 
 // style={{backgroundColor:'rgb(10,20,28)'}}
 export default function HomePage() {
