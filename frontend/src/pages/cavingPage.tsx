@@ -1,11 +1,15 @@
 import React from "react";
 import Footer from "../components/repeats/footer";
 import CavingBanner from "../components/caving/cavingBanner";
-import ImageBgOverlapTextFull from "../components/imageBgOverlapTextFull";
 import ScrollNavBar from "../components/repeats/scrollNavBar";
 import TripleTextColumn from "../components/caving/tripleTextColumn";
 import CavingVideo from "../components/caving/cavingVideo";
 import Testimonials from "../components/caving/testimonials";
+import Carousel from "../components/blog/carousel";
+
+const imp_images = [
+    "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/srt-min.jpg",
+]
 
 export default function CavingPage() {
     return (
@@ -18,8 +22,8 @@ export default function CavingPage() {
             </div>
             <CavingVideo/>
             <TripleTextColumn/>
-
             <Testimonials/>
+            <Carousel imageUrls={imp_images}/>
             <Footer/>
         </div>
     );
