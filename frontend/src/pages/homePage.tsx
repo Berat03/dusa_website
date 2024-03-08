@@ -22,12 +22,11 @@ export default function HomePage() {
             <ImageGridDescription/>
 
 
-            <div className="">
+            <div className="mb-32 sm:mb-0">
                 <ClubStats/>
             </div>
-                        <TripleImage/>
-
-            <div className="relative sm:mt-5" style={{backgroundColor: 'rgb(10,20,28)'}}>
+            <TripleImage/>
+            <div className="bg-custom_bg relative sm:mt-5">
                 <ImageTilesHalfPageText/>
             </div>
             <SplitImageRight/>
