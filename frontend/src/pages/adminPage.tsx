@@ -1,16 +1,33 @@
-import React from 'react';
-import { useAuth } from '../auth/authContext';
+// AdminPage.tsx
+import React, { useState } from 'react';
+import BlogPost from '../components/admin/postBlog';
+import TabBar from "../components/admin/tabBar";
+import ScrollNavBar from "../components/scrollNavBar"; // Adjust the import path as necessary
+// Import ScrollNavBar or any other components you need
 
-const AdminPage: React.FC = () => {
-  const auth = useAuth();
+function AdminPage() {
+  const [selectedTab, setSelectedTab] = useState<string>('Team Members');
+
+  function renderComponent() {
+    switch (selectedTab) {
+      case 'Blog Posts':
+        return <BlogPost />;
+      case 'My Account':
+      case 'Company':
+      case 'Team Members':
+      case 'Billing':
+      default:
+        return <div>Select a tab to view its content.</div>;
+    }
+  }
 
   return (
     <div>
-      <h1>Admin Page</h1>
-      <p>Welcome, {auth.user}!</p>
-      <button onClick={() => auth.logout()}>Logout</button>
+        <ScrollNavBar/>
+        <TabBar onTabSelect={(tabName: React.SetStateAction<string>) => setSelectedTab(tabName)} />
+        {renderComponent()}
     </div>
   );
-};
+}
 
 export default AdminPage;
