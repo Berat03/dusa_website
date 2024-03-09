@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import SearchBar from "../components/searchBar";
+import SearchBar from "../components/repeats/searchBar";
 import MasonryGallery from "../components/gallery/galleryMasonary"; // Ensure correct import path
 
 import Footer from "../components/repeats/footer";

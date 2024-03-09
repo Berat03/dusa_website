@@ -4,7 +4,7 @@ const stats = [
     {id: 1, name: "New members", value: "45+"},
     {id: 2, name: "Caving trips completed", value: "80"},
     {id: 3, name: "Miles driven", value: "2700+"},
-    {id: 4, name: "Spent on new equipment", value: "$70M"},
+    {id: 4, name: "Invested in equipment", value: "£4,300"},
 ];
 
 export default function ClubStats() {
@@ -15,7 +15,7 @@ export default function ClubStats() {
                 src="https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/lastPitchMayday.jpg"
                 alt=""
             />
-            <div className="mx-auto grid max-w-7xl lg:grid-cols-2" >
+            <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
                 <div className="px-6 pb-24 pt-16 sm:pb-32 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32">
                     <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
                         <h2 className="text-base font-semibold leading-8 text-blue-800">
@@ -25,9 +25,8 @@ export default function ClubStats() {
                             Built by generations of cavers
                         </p>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-                            impedit perferendis suscipit eaque, iste dolor cupiditate
-                            blanditiis ratione.
+                            DUSA has grown rapidly since 2021, with more members signed up, trips completed and funds
+                            raised than any previous year.
                         </p>
                         <dl className="mt-10 grid max-w-xl grid-cols-1 gap-8 sm:mt-15 sm:grid-cols-2 xl:mt-15">
                             {stats.map((stat) => (

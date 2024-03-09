@@ -1,4 +1,4 @@
-import SearchBar from "../searchBar";
+import SearchBar from "../repeats/searchBar";
 import {useEffect, useState} from "react";
 import BlogCard from "./blogCard";
 

@@ -2,8 +2,8 @@
 import React from 'react';
 
 interface GalleryItemProps {
-  src: string; // Required
-  description?: string; // Optional
+  src: string;
+  description?: string;
   onClick: (src: string, description?: string) => void;
 }
 

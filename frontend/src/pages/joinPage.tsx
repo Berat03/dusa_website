@@ -14,9 +14,8 @@ export default function JoinPage() {
                 <ContactLinks/>
             </div>
 
-            <div className="space-y-52">
+            <div className="space-y-52 mt-36 sm:mt-0">
                 <MailingList/>
-
             </div>
             <Footer/>
         </div>

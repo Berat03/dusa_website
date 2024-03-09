@@ -8,7 +8,7 @@ export default function ContactLinks() {
             Icon: EnvelopeIcon,
             title: "Send an email",
             description:
-                "Ut cursus est ut amet. Lobortis eget egestas leo vitae eget porttitor risus blandit. Nunc a in lorem vel iaculis porttitor. Email us at speleological.association@durham.ac.uk .",
+                "Have any questions or professional enquiries? Send us an email at speleological.association@durham.ac.uk .",
             link: "mailto:zooyoutwo@gmail.com",
             linkText: "Contact us",
         },
@@ -16,7 +16,7 @@ export default function ContactLinks() {
             Icon: InstagramLogo,
             title: "Instagram",
             description:
-                "Expedita qui non ut quia ipsum voluptatum ipsam pariatur. Culpa vitae ipsum minus eius vero quo quibusdam.",
+                "See what we've been up to most recently, and our upcoming socials. Send us a message!",
             link: "https://www.instagram.com/dusa_caving/?hl=en",
             linkText: "Follow us on Instagram",
         },
@@ -24,7 +24,7 @@ export default function ContactLinks() {
             Icon: FacebookLogo,
             title: "Facebook",
             description:
-                "Sint aut modi porro consequatur architecto commodi qui consequatur. Dignissimos adipisci minima.",
+                "This is the primary way we engage with our ex-members, which is especially helpful for organising gatherings or learning from more experienced people.",
             link: "https://www.facebook.com/groups/DurhamCaving/",
             linkText: "JoinPage our Facebook Page",
         },
@@ -36,11 +36,11 @@ export default function ContactLinks() {
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     Get Involved
                 </h2>
-                <p className="mt-2 text-lg leading-8 text-white">
-                    Aute magna irure deserunt veniam aliqua magna enim voluptate.
+                <p className="mt-2 text-lg leading-8 text-black">
+                    We'll do our best to get back to you ASAP.
                 </p>
             </div>
-            <div className="mx-auto mt-15 max-w-lg space-y-16">
+            <div className="mx-auto mt-10 max-w-lg space-y-16">
                 {contactMethods.map(
                     ({Icon, title, description, link, linkText}, index) => (
                         <div key={index} className="flex gap-x-6">

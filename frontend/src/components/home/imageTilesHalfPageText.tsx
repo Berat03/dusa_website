@@ -1,21 +1,20 @@
 export default function Example() {
     return (
-        <div className="relative overflow-hidden bg-white">
+        <div className="relative overflow-hidden bg-custom_bg">
             <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
                 <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="sm:max-w-lg">
-                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            Summer styles are finally here
+                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                            What makes DUSA special?
                         </h1>
-                        <p className="mt-4 text-xl text-gray-500">
-                            This year, our new summer collection will shelter you from the harsh elements of a world
-                            that doesn't care
-                            if you live or die.
+                        <p className="mt-4 text-xl text-gray-300">
+                            Caving is unlike anything you've ever tried before. It's incorporates many different aspects
+                            from maby different sports, such as climbing and mountaineering, and introduces unique
+                            activities such as single rope technique.
                         </p>
                     </div>
                     <div>
                         <div className="mt-10">
-                            {/* Decorative image grid */}
                             <div
                                 aria-hidden="true"
                                 className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
@@ -84,10 +83,10 @@ export default function Example() {
                             </div>
 
                             <a
-                                href="frontend/src/components#"
+                                href="/gallery"
                                 className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
                             >
-                                Shop Collection
+                                Explore Gallery
                             </a>
                         </div>
                     </div>

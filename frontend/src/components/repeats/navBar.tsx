@@ -9,7 +9,7 @@ interface NavItem {
 
 const navigation: NavItem[] = [
     {name: "CAVING", to: "/caving"},
-    {name: "API", to: "/api"},
+    {name: "TOOLS", to: "/api"},
     {name: "CALENDER", to: "/calender"},
     {name: "GALLERY", to: "/gallery"},
     {name: "BLOG", to: "/blog"},

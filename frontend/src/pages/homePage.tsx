@@ -21,16 +21,16 @@ export default function HomePage() {
             </div>
             <ImageGridDescription/>
 
-
-            <div className="mb-32 sm:mb-0">
-                <ClubStats/>
-            </div>
-            <TripleImage/>
-            <div className="bg-custom_bg relative sm:mt-5">
+            <div className="bg-white">
+                <div className=" mb-32 sm:mb-0">
+                    <ClubStats/>
+                </div>
+                <div className="relative">
+                    <SplitImageRight/>
+                </div>
+                <TripleImage/>
                 <ImageTilesHalfPageText/>
             </div>
-            <SplitImageRight/>
-
             <OurTeam/>
 
             <Footer/>
