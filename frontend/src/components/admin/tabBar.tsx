@@ -13,7 +13,7 @@ type TabBarProps = {
 
 const tabs: Tab[] = [
   { name: 'Gallery', href: '#', current: true },
-  { name: 'Blog Posts', href: '#', current: false },
+  { name: 'Blog', href: '#', current: false },
   { name: 'Calender', href: '#', current: false },
   { name: 'Members & Links', href: '#', current: false },
 ];

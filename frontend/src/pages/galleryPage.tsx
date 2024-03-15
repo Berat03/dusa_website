@@ -8,7 +8,7 @@ import ScrollNavBar from "../components/repeats/scrollNavBar";
 const images = [
     {
         imageUrl: "https://dusabackend.s3.eu-west-2.amazonaws.com/pageAssets/homePage/me_stuck-min.jpg",
-        title: "my fav photo",
+        title: "Me",
         category: "chrimmermeet",
     },
     {

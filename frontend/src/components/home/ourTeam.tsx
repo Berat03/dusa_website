@@ -46,6 +46,16 @@ const teamMembers = [
         role: 'Social Secretary',
         imageUrl: 'https://dusabackend.s3.eu-west-2.amazonaws.com/members/2023_24/maya.png',
     },
+    {
+        name: 'Chloe Almond',
+        role: 'Welfare',
+        imageUrl: 'https://dusabackend.s3.eu-west-2.amazonaws.com/members/2023_24/maya.png',
+    },
+    {
+        name: 'Josh',
+        role: 'Welfarey',
+        imageUrl: 'https://dusabackend.s3.eu-west-2.amazonaws.com/members/2023_24/maya.png',
+    },
 ];
 
 export default function OurTeam() {
