@@ -1,3 +1,15 @@
+### I've re-started this project from scratch in a new [repo](https://github.com/Berat03/dusa-ui). 
+Some reasons why include:
+- Did not consider the backend. Initially made it with AWS serverless tools (S3, Lambda, DynamoDB, etc.), however, I intend to hand this website over at some point, and I don't want maintenance to be difficult. Will just host on a VPS, I'm thinking Vercel and Supabas.
+- Did not utilise code formatting such as eslint and prettier enough.
+- I didn't really have a goal in mind. Kind of aimless
+- Did not consider the backend when designing the front end. Made it too specific, and now I also want to use GraphQL instead of RestAPI.
+- I love my parallax effect on the landing page ('art' is mine too!), but it doesn't leave much room for a hero component-style landing page
+- I used typescript, but I didn't utilise it properly.
+- I over-extended myself by using too many tailwind ui components, without customising them for my use case. So the code is bloated.
+- I also made some stuff from scratch, when I should have just used a library.
+
+
 # DUSA Website
 
 ## Project Introduction
